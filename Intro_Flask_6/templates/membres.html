@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+      <title>Membres</title>
+      <link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+      <h1 id="titre"> Les Membres </h1>
+      <h2 id="titre_2">Voici la liste des membres de notre groupe:</h2>
+      <br>
+      <table id="membre">
+          <caption>Liste des membres</caption>
+            <tr>
+            {% for row in liste %}
+              <td>{{ row[0] }}</td>
+            {% endfor %}
+            </tr>
+      </table>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="retour"><a href="{{ url_for('home') }}"> Retourner à la page d'accueil </a>
+      </div>
+      <br>
+      <br>
+    </body>
+    <footer> by Morad</footer>
+</html>

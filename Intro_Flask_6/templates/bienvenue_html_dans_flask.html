@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+      <title>HomePage</title>
+      <link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+      <h1 id="titre"> Bienvenue </h1>
+      <h2 id="titre_2">Voici les résultats que vous nous avez fourni:</h2>
+      <br>
+      <div id="rendu">
+        <p id="result">{{resultat}}</p>
+      </div>
+	  
+      <br>
+      <div id="retour"><a href="{{ url_for('home') }}"> Retourner à la page d'accueil </a>
+      </div>
+      
+    </body>
+</html>

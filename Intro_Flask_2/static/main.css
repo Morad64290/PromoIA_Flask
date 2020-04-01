@@ -1,0 +1,17 @@
+.multicolor {
+  background-clip: text;
+  color: rgb(187, 255, 0);
+  text-align: center;
+} 
+
+.pics {
+  border:5px solid black;
+  background-color: blue;
+  padding: 30px;
+  margin: 2px;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}

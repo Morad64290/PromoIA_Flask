@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+      <title>HomePage</title>
+      <link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+      <h1 id="titre"> Vos Résultats </h1>
+      <h2 id="titre_2">Merci, Vos résultats ont bien été enregistrés:</h2>
+      <br>
+      <div id="resultat">
+        <div id="cr">
+          <p id="identif">Votre nom et prénom sont: <div class="civ">{{civilite}} {{ nom }} {{ prenom }}</div></p>
+          <p id="pseudo">Vous avez choisi :<b>{{pseudo}}</b> en tant que pseudo</p>
+        </div>
+        <br>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="retour"><a href="{{ url_for('home') }}"> Retourner à la page d'accueil </a>
+      </div>
+      <br>
+      <div id="retour"><a href="{{ url_for('membres') }}"> Liste Membres </a>
+      </div>
+      
+    </body>
+    <footer> by Morad</footer>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <title>HomePage</title>
+        <link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+
+    <body>
+<!-- Haut de page -->
+        <div id="titre"> 
+            <h1>Formulaire B14 !</h1>
+            <p id="p_1"> Bonjour, <br> Merci de bien vouloir remplir ce formulaire <br>
+            Le but étant d'apprendre à mieux vous connaitre </p>
+        </div>
+<!-- Partie formulaire -->
+        <div id="identite">
+            <form action="." method="POST">
+<!-- On insere un champ de remplissage avec FIELDSET-->
+                <fieldset id="coord">
+<!-- On peut donner un titre  -->
+                    <label>Votre Civilité :</label><br>
+<!-- retour à la ligne + création des boutons Mr/Mme/Mlle -->
+                    <label for="">Pseudo :</label>
+                    <input type="text" name="pseudo" id="pseudo"  size="30" placeholder="Ex : Zorro" required>
+                    <br>
+                    <br>  
+<!-- Création champ Nom -->
+                    <label for="">Nom :</label>
+                    <input type="text" name="nom" id="nom"  size="30" placeholder="Ex : Neymar" required>
+                    <br>
+                    <br>  
+                    <!-- Ici la taille maxi de caractere sera de 30 -->
+<!-- Création champ Prénom -->
+                    <label for="">Prenom :</label>
+                    <input type="text" name="prenom" size="30" placeholder="Ex : Jean" required>
+                    <br>
+                    <br>
+
+                </fieldset>
+<!-- Création du bouton envoyer le formulaire -->
+            <p id="Envoyer">
+                <input type="submit" value="ENVOYER">
+            </p>
+            </form>
+        </div>
+        <footer> 
+            <p> by Morad </p>
+        </footer>
+    </body>
+
+</html>

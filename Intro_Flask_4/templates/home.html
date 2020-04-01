@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <title>HomePage</title>
+        <link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+
+    <body>
+<!-- Haut de page -->
+        <div id="titre"> 
+            <h1>Formulaire B14 !</h1>
+            <p id="p_1"> Bonjour, <br> Merci de bien vouloir remplir ce formulaire <br>
+            Le but étant d'apprendre à mieux vous connaitre </p>
+        </div>
+<!-- Partie formulaire -->
+        <div id="identite">
+            <form action="." method="POST">
+<!-- On insere un champ de remplissage avec FIELDSET-->
+                <fieldset id="coord">
+<!-- On peut donner un titre  -->
+                    <label>Votre Civilité :</label><br>
+<!-- retour à la ligne + création des boutons Mr/Mme/Mlle -->
+                    <input type="radio" name="civilite" value="M." />M.
+                    <input type="radio" name="civilite" value="Mlle" />Mlle
+                    <input type="radio" name="civilite" value="Mme" />Mme
+                    <br>
+                    <br>
+<!-- Création champ Nom -->
+                    <label>Nom :</label>
+                    <input type="text" name="nom" id="nom"  size="30" placeholder="Ex : Neymar" required>
+                    <br>
+                    <br>  
+                    <!-- Ici la taille maxi de caractere sera de 30 -->
+<!-- Création champ Prénom -->
+                    <label for="">Prenom :</label>
+                    <input type="text" name="prenom" size="30" placeholder="Ex : Jean" required>
+                    <br>
+                    <br>
+<!-- Création champ Adresse -->
+                    <label for="">Adresse :</label>
+                    <input type="text" name="adresse" placeholder="Ex : 12 rue des capucines" required>
+                    <br>
+                    <br>
+<!-- Création champ Code Postal -->
+                    <label for="">Code Postal :</label>
+                    <select name="CP">
+                        <option value="PAU 64000">64000 Pau</option>
+                        <option value="GAN 64290">64290 Gan</option>
+                        <option value="BAYONNE 64100">64100 Bayonne</option>
+                    </select>
+                    <br>
+                    <br>
+<!-- création champ Age -->
+                    <label for="">Age :</label>
+                    <input type="number"name= "age" min="1" max="99" placeholder="Ex : 28" required>
+                </fieldset>
+<!-- Création du bouton envoyer le formulaire -->
+            <p id="Envoyer">
+                <input type="submit" value="ENVOYER">
+            </p>
+            </form>
+        </div>
+    </body>
+    <footer></footer>
+</html>

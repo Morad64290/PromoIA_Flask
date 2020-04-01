@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+      <title>HomePage</title>
+      <link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+
+
+    <body>
+      <h1 class="titre_1"> Test de plusieurs pages</h1>
+      <p id="p_1">Je fais un test de compréhension de Flask</p>
+      <div><img class="pics" src='/static/img/git.png' alt="git"/></div>
+      
+      <div class="lien"><a href="{{ url_for('suite') }}"> Cliquer sur ce lien pour aller à la page suivante </a></div>
+    </body>
+    
+  
+</html>
